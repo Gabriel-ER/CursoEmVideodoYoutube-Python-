@@ -1,0 +1,5 @@
+a=int(input("número:\n"))
+b=int(input("segundo número:\n"))
+print("antecessor: {}, sucessor: {}".format(a-1,a+1))
+print("A média entre {} e {} é {}".format(a,b,(a+b)/2))
+print("{} metros é igual a {} centímetros e {} milímetros".format(b,b*100,b*1000))
