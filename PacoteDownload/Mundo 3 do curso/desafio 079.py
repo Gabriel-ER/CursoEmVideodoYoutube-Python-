@@ -16,4 +16,4 @@ while True:
 
     if r != '':
         break
-print(F'Sua lista: {a}')
+print(F'Sua lista: {sorted(a)}')
