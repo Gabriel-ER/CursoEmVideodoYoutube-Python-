@@ -1,31 +1,16 @@
-#auxiliar = []
-principal = []
-pares = []
-impares = []
-
-
-for i in range (7):
-    entrada = float(input(f"Número {i}: "))
+lista = [[], []]
+for i in range(7):
+    entrada = int(input(f'Digite o {i+1}º Número: '))
     if entrada % 2 == 0:
-        principal.append(entrada)
+        lista[0].append(entrada)
     else:
-        principal.insert(0,entrada)
+        lista[1].append(entrada)
+'''
+lista[0].sort()
+lista[1].sort()
+print(f'Lista dos Pares: {lista[0]}')
+print(f'Lista dos Impares: {lista[1]}')'''
 
-print(principal)
-
-
-
-'''for i in range (7):
-    entrada = float(input(f"Número {i}: "))
-    if entrada % 2 == 0:
-        pares.append(entrada)
-    else:
-        impares.append(entrada)
-
-for par in pares:
-    principal.append(par)
-for impar in impares:
-    principal.append(impar)
-
-
-print(principal)'''
+# Posso utilizar alternativamente:
+print(f'Lista dos pares: {sorted(lista[0])}')
+print(f'Lista dos impares: {sorted(lista[1])}')
